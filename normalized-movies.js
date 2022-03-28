@@ -1,4 +1,4 @@
-var movies = [
+var movie = [
   {
     "title": "Patton Oswalt: Annihilation",
     "year": 2017,
@@ -41410,7 +41410,7 @@ var movies = [
   {
     "title": "Harry Potter and the Sorcerer's Stone",
     "year": 2001,
-    "categories": [
+    "categories":   [
       "Action",
       "Adventure",
       "Family",
