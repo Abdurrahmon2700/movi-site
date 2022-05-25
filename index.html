@@ -108,14 +108,15 @@
           <input type="datetime" id="movedatasince" name="movedata" placeholder="data" required>
         <input type="submit" id="submit" value="Submit">
       </form>
-      <div class="movie__part">
+      <div  class="movie__part">
         <h2 class="movie__part-title">Featured Movie</h2>
         <a class="movie__part-link" href="#">See more<i class='bx bx-chevron-right'></i></a>
       </div>
       
-      <ul class="main__list">
+      <ul class="main__list" id="list">
         <!-- <div class="card" style="width: 18rem;">
           <img src="" class="card-img-top" alt="...">
+          <button onclick = "btnclick" class="like__move" id="likebtn"><i class='bx bx-heart' id="hearth"></i></button>
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -124,6 +125,7 @@
           </div>
         </div> -->
       </ul> 
+      <div class="pagination__number" id="pagination"></div>
       <!-- Modal -->
       <div class="modal fade testab" id="ab" tabindex="-1" aria-labelledby="exampleModalLabel"aria-hidden="true">
         <div class="modal-dialog">

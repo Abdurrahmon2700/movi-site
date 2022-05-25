@@ -177,11 +177,20 @@ body {
   max-width: 240px !important;
   height: 370px;
   border: none;
+  position: relative;
 }
 
 .link__youtube {
   position: absolute;
   bottom: 0;
+}
+
+.like__move {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .item__title {

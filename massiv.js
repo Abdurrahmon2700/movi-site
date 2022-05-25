@@ -1,6 +1,7 @@
 let list =  document.querySelector('.main__list')
 let modal = document.querySelector('.modal')
 let filmcategoryop = document.querySelector('.filmcategory')
+
 function render ( movies ){
   list.innerHTML = ""
   for (let i of movies) {
@@ -9,6 +10,7 @@ function render ( movies ){
       <li class="main__item">
         <div class="card">
           <img src=${i.youtubePoster} alt="...">
+          <button class="like__move"  id= "likebtn"><i class='bx bx-heart' id="hearth"></i></button>
           <h3 class="item__title">${i.title}</h3>
             <div class"card-body">
               <i class='bx bx-star'></i>
@@ -27,6 +29,8 @@ function render ( movies ){
     list.appendChild(newLi)
   }
 }
+
+
 render(movie)
 function options (){
  let categoris =  movie.map((film)=>film.categories)
@@ -48,8 +52,6 @@ function options (){
  }
 }
 options()
-
-
 let movieImg = document.querySelector('.movi__img')
 let modalBody = document.querySelector('.movie__desc')
 let search = document.querySelector('.site__input')
@@ -89,4 +91,35 @@ search.onkeyup = (event)=>{
     buttons()
     search.value = ""
   }
+}
+
+function btnclick (e){
+  console.log('12');
+}
+
+// likeBtn.addEventListener = (e)=>{
+// }
+
+let likeBtn = document.querySelectorAll('.like__move')
+// likeBtn[0].addEventListener("click", () => {
+// console.log('ok');
+// })
+
+
+likeBtn.forEach((item)=> {
+  item.addEventListener("click", () => {
+    console.log("d");
+    hearth.style = "display:none;"
+  })
+})
+
+let listElement = document.getElementById('list');
+let paginationNumber = document.getElementById('pagination');
+
+
+let current__page = 1;
+let row = 30;
+
+function displayList (item, wrapper, rows_per_page, page) {
+  wrapper.innerHTML = "";
 }
